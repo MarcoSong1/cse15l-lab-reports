@@ -12,7 +12,7 @@ Hello, world!
 
 [Youtube](https://www.youtube.com/)
 
-[Another File](https://marcosong1.github.io/cse15l-lab-reports/sample.html)
+[Another File](sample.md)
 
 > Blockquote
 
