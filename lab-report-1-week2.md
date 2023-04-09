@@ -33,5 +33,31 @@ After typing my password, my terminal looks like this:
 As long as our terminal shows information about Cluster Status, it is a good indication that we successfully logged in the remotre server.
 <img width="319" alt="Success Login" src="https://user-images.githubusercontent.com/129908756/230743645-58adaafd-985e-4afd-ad71-f5f6c0918457.png">
 
+Now, We have successfully logged in the remote server of CSE15L!
+
+## Step 3: Trying Some Commands
+For the remaining parts, let's try some commands on the terminal. 
+
+Command List:
+* `cd ~`
+
+* `cd`
+
+* `ls -lat`
+
+* `ls -a`
+
+* `ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc`, where the `abc` is one of the other group members’ username
+
+* `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
+
+* `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
+
+Information shown on the terminal:
+
+<img width="690" alt="Command" src="https://user-images.githubusercontent.com/129908756/230751947-3cba92db-f6da-4387-a738-2c4faf8fc789.png">
+
+
+
 
 
