@@ -31,6 +31,7 @@ After typing my password, my terminal looks like this:
 `Observation`: It is normal that the information on terminals varies. The reason why I got this information is that it is not my first time log in CSE15L remote server. When I logged in the remote server for the first time, I received some warnning information: `Are you sure you want to continue connecting (yes/no/[fingerprint])?` After typing yes, I successfully logged in the remote server: `Hello cs15lsp23zz, you are currently logged into ieng6-203.ucsd.edu`. However, I never receive this warning information when I log in the remote server afterwards. Hence, the information shown on the terminals might be different from people to people. It contains some personal information and different warnings, which might be due to the differences of systems, times of log-ins, etc. 
 
 As long as our terminal shows information about Cluster Status, it is a good indication that we successfully logged in the remotre server.
+
 <img width="319" alt="Success Login" src="https://user-images.githubusercontent.com/129908756/230743645-58adaafd-985e-4afd-ad71-f5f6c0918457.png">
 
 Now, We have successfully logged in the remote server of CSE15L!
