@@ -53,11 +53,20 @@ Command List:
 
 * `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 
+Explanation of the Commands (Reference:[Week1 WorkSheet](https://drive.google.com/file/d/193nBYEn-Hmf5tP1TwltH1NPARWWAj5Yh/view)):
+
+`cd`: Change directory, where `cd` or `cd ~` will direct us to the home directory. `cd <path>` - “Change Directory” Used to switch the
+current working directory to the given path
+
+`ls <path>` - “List” Used to list the files and folders the given path, where `ls -a` will include all files and directories including hidden ones.
+`ls -lat` is more comprehensive than `ls -a`, and it will provide more detailed information including modification time.
+
+`cp` Copy the file or directory from one place to another place
+
+`cat` Shows the contents of the files given by the paths
+
 Information shown on the terminal:
 
 <img width="690" alt="Command" src="https://user-images.githubusercontent.com/129908756/230751947-3cba92db-f6da-4387-a738-2c4faf8fc789.png">
 
-
-
-
-
+We can exit the remote server by using Ctrl-D or Run the command `exit`
