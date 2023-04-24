@@ -4,7 +4,7 @@ This lab is a tutorial about how to log into a course-specific account on ieng6.
 Firstly, We need to install the [Visual Studio Code](https://code.visualstudio.com/) in our computer.
 ![VSCode Download](https://user-images.githubusercontent.com/129908756/230742292-476df3eb-cacb-4268-a302-c059142035d2.jpg)
 
-After installing the VSCode and open the VSCode, We will see the Welcome Page in VSCode(get started).
+After installing the VSCode and open the VSCode, We will see the Welcome Page in VSCode(get started). 
 
 <img width="1349" alt="VSCode Start Page" src="https://user-images.githubusercontent.com/129908756/230742413-1127138c-5bef-4d9a-a794-d0185afded1e.png">
 It is fine if the welcome page looks a little bit differently due to the differences of systems and settings.
