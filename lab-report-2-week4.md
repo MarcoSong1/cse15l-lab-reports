@@ -126,5 +126,5 @@ Why does this fix the bug?
 The code inside the  for loop has bugs. Instead of using `arr[i] = newArray[arr.length - i - 1]`, we should change it to `newArray[i] = arr[arr.length - i - 1]`. The assignments are reversed. If we keeps the bugs, it will mess up the reverse method for each iteration in the for loop. If we use `newArray[i] = arr[arr.length - i - 1]`, we will successfully accomplish the reverse goal by reordering the elements.
 
 ## Part 3: Reflection
-
+       
 During these weeks, I think the most interessting knowledge that I have leanrned about is URL and server. I had no ideas about how these things work, even though I use them every day. Before I learned this in class, I though these knowledge are too fancy and chanllenging, and only some experts can know them well. After Professor Politz talked these things in lectures, I realize that it is quite fun to learn these and try them out in the lab. Now, I am able to make on own server and URL. Also, I have a deeper understanding about bugs. Previously, I thought that the only thing I needed to do was just to fix bugs. However, I did not have a deep understanding about bugs, like different types of bugs, sympotoms, techniques to fix bugs, etc. Now, I improved my skill of debugging! ✌🏻  
