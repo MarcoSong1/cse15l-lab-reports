@@ -30,7 +30,7 @@ see, unlike the `NumberServer.java` in the lab, I did not check so many exceptio
 ![29651682311735_ pic_hd](https://user-images.githubusercontent.com/129908756/233902667-8a073380-381f-4d76-a61e-e98c1e637725.jpg)
 ![29661682311770_ pic_hd](https://user-images.githubusercontent.com/129908756/233902683-758c5b28-1623-4fd5-9cd8-b7696b593290.jpg)
 
-Explanation:
+Explanation: 
 
 `/add-message?s=Hello`:
 
