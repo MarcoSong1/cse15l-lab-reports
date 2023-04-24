@@ -62,4 +62,69 @@ Bugs I choose from the lab:
 
 * A failure-inducing input for the buggy program:  
   JUnit test:
+```
+  @Test
   
+  public void testReversed() {
+  
+    int[] input1 = { 1,2 };
+    
+    assertArrayEquals(new int[]{2, 1 }, ArrayExamples.reversed(input1));
+    
+   }
+ ```
+  
+  Failure information on VSCode:
+  ![29731682319099_ pic_hd](https://user-images.githubusercontent.com/129908756/233920573-f369acfd-b5c0-4af0-b4f5-d4cedccd59dd.jpg)
+
+* An input that doesn’t induce a failure
+  JUnit test:
+```
+  @Test
+  
+  public void testReversed() {
+  
+    int[] input2 = { };
+    
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input2));
+    
+  }
+```
+  
+  Information on VSCode:
+  ![29741682319239_ pic](https://user-images.githubusercontent.com/129908756/233921164-62a9a96c-aa73-47d4-b1af-b0c2c3e5e22f.jpg)
+
+* Bug code:
+
+```
+static int[] reversed(int[] arr) {
+
+    int[] newArray = new int[arr.length];
+    
+    for(int i = 0; i < arr.length; i += 1) {
+    
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    
+    return arr;
+}
+```
+
+Fix bug:
+
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
+Why does this fix the bug?
+
+The code inside the  for loop has bugs. Instead of using `arr[i] = newArray[arr.length - i - 1]`, we should change it to `newArray[i] = arr[arr.length - i - 1]`. We should assign `newArray[arr.length - i - 1]` to `newArray` rather than `arr[i]`. If we assign the value to `arr[i]`, it will mess up the reverse for each iteration in the for loop. If we use `newArray[i] = arr[arr.length - i - 1]`, we will successfully accomplish the reverse goal by reordering the elements.
+
+## Part 3: Reflection
+
+During these weeks, I think the most interessting that I have leanrned about is URL and server. I had no ideas about how these things work, even though I use them every day. Before I learned this in class, I though these knowledge are too fancy and chanllenging, and only some experts can know them well. After Professor Politz talked these things in lectures, I realize that it is quite fun to learn these and try them out in the lab. Now, I am able to make on own server and URL. Also, I have a deeper understanding about bugs. Previously, I thought that the only thing I needed to do was just to fix bugs. However, I did not have a deep understanding about bugs, like different types of bugs, sympotoms, techniques to fix bugs, etc. Now, I improved my skill of debugging! ✌🏻
