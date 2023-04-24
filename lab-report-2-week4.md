@@ -1,5 +1,5 @@
 # Lab Report 2 - Servers and Bugs
-In this report, we will explore some interesting things about servels, URL, and debug.
+In this report, we will explore some interesting things about servers, URL, and debug.
 
 ## Part 1: Write a web server and have fun with it
 We will write a web server called StringServer that supports the path and behavior described in the write-up.
@@ -24,7 +24,7 @@ the page should show:
 Here are my code of implemation:
 
 Note: The `server.java` (the first two images) is the same file that we did in the lab. I worte `StringServer.java` based on the file `NumberServer.java` in the lab. As you can
-see, unlike the `NumberServer.java` in the lab, I did not check so many exceptions or potential error cases in my code. This is because that I know exactly what will be typed in my server. That is I am the only user in this server, thus I did not check so many exceptions and potential errors.
+see, unlike the `NumberServer.java` in the lab, I did not check so many exceptions or potential error cases in my code. This is because that I know exactly what will be typed in my server. That is I am the only user in this server. As long as I can make sure I can give correct input, thus I did not check so many exceptions and potential errors.
 
 ![29691682312411_ pic_hd](https://user-images.githubusercontent.com/129908756/233903913-29eecfe0-c6f2-45d7-8d92-075340bf4828.jpg)
 ![29651682311735_ pic_hd](https://user-images.githubusercontent.com/129908756/233902667-8a073380-381f-4d76-a61e-e98c1e637725.jpg)
@@ -123,7 +123,7 @@ static int[] reversed(int[] arr) {
 ```
 Why does this fix the bug?
 
-The code inside the  for loop has bugs. Instead of using `arr[i] = newArray[arr.length - i - 1]`, we should change it to `newArray[i] = arr[arr.length - i - 1]`. We should assign `newArray[arr.length - i - 1]` to `newArray` rather than `arr[i]`. If we assign the value to `arr[i]`, it will mess up the reverse for each iteration in the for loop. If we use `newArray[i] = arr[arr.length - i - 1]`, we will successfully accomplish the reverse goal by reordering the elements.
+The code inside the  for loop has bugs. Instead of using `arr[i] = newArray[arr.length - i - 1]`, we should change it to `newArray[i] = arr[arr.length - i - 1]`. The assignments are reversed. If we keeps the bugs, it will mess up the reverse method for each iteration in the for loop. If we use `newArray[i] = arr[arr.length - i - 1]`, we will successfully accomplish the reverse goal by reordering the elements.
 
 ## Part 3: Reflection
 
