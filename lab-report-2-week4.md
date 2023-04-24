@@ -4,7 +4,7 @@ In this report, we will explore some interesting things about servers, URL, and 
 ## Part 1: Write a web server and have fun with it
 We will write a web server called StringServer that supports the path and behavior described in the write-up.
 
-The request looks like: 
+The request looks like:  
 
  `/add-message?s=<string>`
  
