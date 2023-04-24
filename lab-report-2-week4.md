@@ -1,4 +1,4 @@
-# Lab Report 2 - Servers and Bugs
+# Lab Report 2 - Servers and Bugs 
 In this report, we will explore some interesting things about servers, URL, and debug.
 
 ## Part 1: Write a web server and have fun with it
