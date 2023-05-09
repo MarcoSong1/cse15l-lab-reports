@@ -135,19 +135,19 @@ Buggy code:
 
 If we pass this input array to our buggy code. Our output will be `{0,0,0,0}`. Let's go through the for loop iterations to see why this output was produced.
 
-1. i = 0:
+Iteration 1: i = 0:
 
 `newArray[arr.length - i - 1]` will have index 4 - 0 - 1 = 3; We have not assign any value to `newArray[3]`, thus by dedault `arr[0]` will be `0`. After this iteration, `arr` becomes `{0,2,3,4}`.
 
-2. i = 1:
+Iteration 2: i = 1:
 
 `newArray[arr.length - i - 1]` will have index 4 - 1 - 1 = 2; We have not assign any value to `newArray[2]`, thus by dedault `arr[1]` will be `0`. After this iteration, `arr` becomes `{0,0,3,4}`.
 
-3. i = 2:
+Iteration 3: i = 2:
 
 `newArray[arr.length - i - 1]` will have index 4 - 2 - 1 = 1; We have not assign any value to `newArray[1]`, thus by dedault `arr[2]` will be `0`. After this iteration, `arr` becomes `{0,0,0,4}`.
 
-4. i = 3:
+Iteration 4: i = 3:
 
 `newArray[arr.length - i - 1]` will have index 4 - 3 - 1 = 0; We have not assign any value to `newArray[0]`, thus by dedault `arr[3]` will be `0`. After this iteration, `arr` becomes `{0,0,0,0}`.
 
@@ -155,19 +155,19 @@ After all iterations inside the for loop, the `arr` will be `{0,0,0,0}`, which i
 
 Fixed code:
 
-1. i = 0:
+Iteration 1: i = 0:
 
 `arr[arr.length - i - 1]` will have index 4 - 0 - 1 = 3; `arr[3]` has the value 4, thus `newArray[0]` will be assigned the value `4`. After this iteration, `newArray` becomes `{4, 0, 0, 0}`.
 
-2. i = 1:
+Iteration 2: i = 1:
 
 `arr[arr.length - i - 1]` will have index 4 - 1 - 1 = 2; `arr[2]` has the value 3, thus `newArray[1]` will be assigned the value `3`. After this iteration, `newArray` becomes `{4, 3, 0, 0}`.
 
-3. i = 2:
+Iteration 3: i = 2:
 
 `arr[arr.length - i - 1]` will have index 4 - 2 - 1 = 1; `arr[1]` has the value 2, thus `newArray[2]` will be assigned the value `2`. After this iteration, `newArray` becomes `{4, 3, 2, 0}`.
 
-4. i = 3:
+Iteration 4: i = 3:
 
 `arr[arr.length - i - 1]` will have index 4 - 3 - 1 = 0; `arr[0]` has the value 1, thus `newArray[3]` will be assigned the value `1`. After this iteration, `newArray` becomes `{4, 3, 2, 1}`.
 
