@@ -125,6 +125,54 @@ Why does this fix the bug?
 
 The code inside the  for loop has bugs. Instead of using `arr[i] = newArray[arr.length - i - 1]`, we should change it to `newArray[i] = arr[arr.length - i - 1]`. The assignments are reversed. If we keeps the bugs, it will mess up the reverse method for each iteration in the for loop. If we use `newArray[i] = arr[arr.length - i - 1]`, we will successfully accomplish the reverse goal by reordering the elements.
 
+Let's work through an example to explain this:
+
+```
+int[] test = {1,2,3,4}; // our test array
+```
+
+Buggy code:
+
+If we pass this input array to our buggy code. Our output will be `{0,0,0,0}`. Let's go through the for loop iterations to see why this output was produced.
+
+1. i = 0:
+
+`newArray[arr.length - i - 1]` will have index 4 - 0 - 1 = 3; We have not assign any value to `newArray[3]`, thus by dedault `arr[0]` will be `0`. After this iteration, `arr` becomes `{0,2,3,4}`.
+
+2. i = 1:
+
+`newArray[arr.length - i - 1]` will have index 4 - 1 - 1 = 2; We have not assign any value to `newArray[2]`, thus by dedault `arr[1]` will be `0`. After this iteration, `arr` becomes `{0,0,3,4}`.
+
+3. i = 2:
+
+`newArray[arr.length - i - 1]` will have index 4 - 2 - 1 = 1; We have not assign any value to `newArray[1]`, thus by dedault `arr[2]` will be `0`. After this iteration, `arr` becomes `{0,0,0,4}`.
+
+4. i = 3:
+
+`newArray[arr.length - i - 1]` will have index 4 - 3 - 1 = 0; We have not assign any value to `newArray[0]`, thus by dedault `arr[3]` will be `0`. After this iteration, `arr` becomes `{0,0,0,0}`.
+
+After all iterations inside the for loop, the `arr` will be `{0,0,0,0}`, which is our returned value. By the buggy code, the functionality did not reverse the input array correctly. As we can see, the function reversed the elements of the input array `arr` itself by changing `arr[i]` value from `newArray[arr.length - i - 1]`, which is an uninitialized value (by default, 0). It returns the modified input array `arr` rather than the `newArray`.
+
+Fixed code:
+
+1. i = 0:
+
+`arr[arr.length - i - 1]` will have index 4 - 0 - 1 = 3; `arr[3]` has the value 4, thus `newArray[0]` will be assigned the value `4`. After this iteration, `newArray` becomes `{4, 0, 0, 0}`.
+
+2. i = 1:
+
+`arr[arr.length - i - 1]` will have index 4 - 1 - 1 = 2; `arr[2]` has the value 3, thus `newArray[1]` will be assigned the value `3`. After this iteration, `newArray` becomes `{4, 3, 0, 0}`.
+
+3. i = 2:
+
+`arr[arr.length - i - 1]` will have index 4 - 2 - 1 = 1; `arr[1]` has the value 2, thus `newArray[2]` will be assigned the value `2`. After this iteration, `newArray` becomes `{4, 3, 2, 0}`.
+
+4. i = 3:
+
+`arr[arr.length - i - 1]` will have index 4 - 3 - 1 = 0; `arr[0]` has the value 1, thus `newArray[3]` will be assigned the value `1`. After this iteration, `newArray` becomes `{4, 3, 2, 1}`.
+
+After all iterations, the newArray will be returned, which is `{4, 3, 2, 1}`. The fixed code correctly reversed the orders of `arr` by returning `newArray` with the reversed elements without modifying the original input array.
+
 ## Part 3: Reflection
        
 During these weeks, I think the most interessting knowledge that I have leanrned about is URL and server. I had no ideas about how these things work, even though I use them every day. Before I learned this in class, I though these knowledge are too fancy and chanllenging, and only some experts can know them well. After Professor Politz talked these things in lectures, I realize that it is quite fun to learn these and try them out in the lab. Now, I am able to make on own server and URL. Also, I have a deeper understanding about bugs. Previously, I thought that the only thing I needed to do was just to fix bugs. However, I did not have a deep understanding about bugs, like different types of bugs, sympotoms, techniques to fix bugs, etc. Now, I improved my skill of debugging! ✌🏻  
