@@ -151,7 +151,7 @@ Iteration 4: i = 3:
 
 `newArray[arr.length - i - 1]` will have index 4 - 3 - 1 = 0; We have not assign any value to `newArray[0]`, thus by dedault `arr[3]` will be `0`. After this iteration, `arr` becomes `{0,0,0,0}`.
 
-After all iterations inside the for loop, the `arr` will be `{0,0,0,0}`, which is our returned value. By the buggy code, the functionality did not reverse the input array correctly. As we can see, the function reversed the elements of the input array `arr` itself by changing `arr[i]` value from `newArray[arr.length - i - 1]`, which is an uninitialized value (by default, 0). It returns the modified input array `arr` rather than the `newArray`.
+After all iterations inside the for loop, the `arr` will be `{0,0,0,0}`, which is our returned value. By the buggy code, the buggy code functionality did not reverse the input array correctly. As we can see, the function reversed the elements of the input array `arr` itself by changing `arr[i]` value from `newArray[arr.length - i - 1]`, which is an uninitialized value (by default, 0). It returns the modified input array `arr` rather than the `newArray`.
 
 Fixed code:
 
