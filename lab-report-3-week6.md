@@ -87,7 +87,106 @@ Learning from Option 1, we used `-type f` to find all files under `./technical` 
 Prompt I asked ChatGPT:
 ![30621683749439_ pic](https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/f6ea2bef-55aa-419b-a59d-d0bd0675da54)
 
-## Option 3: Find Empty(`-empty` option)
+ChatGPT gave me several options. Here, I want to discuss the options `-iname` and `-newermt`
+
+## Option 3: Case-Insensitive Name Searching(`-iname` option)
+The answer ChatGPT gave me:
+![30631683750646_ pic_hd](https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/4f493fae-baf2-4250-b5fb-7fa31e52f7a8)
+![30641683750658_ pic](https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/29b80588-d4b5-437a-827b-1ac42e1ccee1)
+
+According to ChatGPT, "the `-iname` option is similar to -name but is case-insensitive, allowing searching for files and directories based on their name using case-insensitive shell pattern matching."
+
+Example 1:
+
+```
+find ./technical -iname '*.TXT'
+```
+
+Output:
+```
+./technical/plos/pmed.0010071.txt
+./technical/plos/journal.pbio.0030127.txt
+./technical/plos/pmed.0010058.txt
+./technical/plos/pmed.0010070.txt
+./technical/plos/pmed.0010064.txt
+./technical/plos/pmed.0020158.txt
+./technical/plos/journal.pbio.0020042.txt
+./technical/plos/journal.pbio.0020297.txt
+./technical/plos/pmed.0020206.txt
+./technical/plos/pmed.0020212.txt
+./technical/plos/pmed.0020216.txt
+./technical/plos/journal.pbio.0030094.txt
+./technical/plos/journal.pbio.0020046.txt
+./technical/plos/pmed.0020028.txt
+./technical/plos/journal.pbio.0020052.txt
+./technical/plos/pmed.0020148.txt
+./technical/plos/pmed.0020160.txt
+...
+```
+
+In this case, `find ./technical -iname '*.TXT'` finds all files with the .txt extension under `./technical` path even though we typed '*.TXT' since `-iname` is case-insensitive. It can be helpful to find some files we are interested in if we do not care about cases.
+
+Example 2:
+
+```
+find ./technical -iname 'report*'
+```
+
+Output:
+```
+./technical/government/About_LSC/reporting_system.txt
+./technical/government/Post_Rate_Comm/ReportToCongress2002WEB.txt
+```
+
+By learning from ChatGPT, in this case, we found all files and directories with names starting with "report" or "Report" within the ./technical directory and its subdirectories. This can be more powerful than `-name` if we do not care about cases of our searches as it is more effective.
+
+## Option 4: Searching Newer Than Specified Date(`-newermt` option)
+The answer ChatGPT gave me:
+![30671683751441_ pic_hd](https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/3906f521-c846-4314-b02a-5934e6703d7f)
+![30661683751388_ pic](https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/48c005df-c9c9-4910-a158-3fb034d8db6c)
+
+According to ChatGPT, "the -newermt option allows searching for files or directories that are newer than a specified date or time."
+
+Example 1:
+
+```
+find ./technical -type f -newermt '2023-05-07'
+``
+
+Output:
+```
+Nothing was shown on the terminal
+```
+
+In this case, `find ./technical -type f -newermt '2023-05-07'` searches for all files under `./technical` directory and its subdirectories that have modification time newer than '2023-05-07'. Since this date is brand new, there is no modification in recent days in files under
+`./technical`
+
+Example 2:
+
+```
+find ./technical -type d -newermt '2022-04-01'
+```
+
+Output:
+```
+./technical
+./technical/government
+./technical/government/About_LSC
+./technical/government/Env_Prot_Agen
+./technical/government/Alcohol_Problems
+./technical/government/Gen_Account_Office
+./technical/government/Post_Rate_Comm
+./technical/government/Media
+./technical/plos
+./technical/biomed
+./technical/911report
+```
+
+In this example, `find ./technical -type d -newermt '2022-04-01'` searches for all directories within the ./technical directory and its subdirectories that have a modification time newer than
+
+
+
+
 
 
 
