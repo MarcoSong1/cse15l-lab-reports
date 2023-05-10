@@ -52,7 +52,41 @@ Output:
 ```
 By using `-type f`, it allows us to find all files inside `./technical`, it is helpful if we want to look at the files without their directories.
 
-## Option 2: Find files by type(`-type` option)
+## Option 2: Find Empty(`-empty` option)
+
+This time, I searched `Find command in Linux` on google. By exploring a little bit, I found this source that is concise and easy to understand for some `find` options. Here, I want to talk about `-empty` option.
+
+Source: https://www.tecmint.com/35-practical-examples-of-linux-find-command/  (No.19,20)
+
+Example 1:
+
+```
+find ./technical -type d -empty
+```
+
+Output:
+```
+Nothing was shown on the terminal
+```
+Learning from Option 1, we used `-type d` to find all directories. By combining it with `-type d -empty`, we will find all empty directories under `./technical` path. This one can be useful to detect if there is any empty directory under `./technical` path. In this case, there is no empty directories under `./technical` path.
+
+Example 2:
+
+```
+find ./technical -type f  -empty
+```
+
+Output:
+```
+Nothing was shown on the terminal
+```
+Learning from Option 1, we used `-type f` to find all files under `./technical` path. By combining it with `-type f -empty`, we will find all empty files under `./technical` path. This one can be useful to detect if there is any empty file under `./technical` path. In this case, there is no empty files under `./technical` path.
+
+## Now, let's use ChatGPT to help us find the rest two options as our sources.
+
+
+
+
 
 
 
