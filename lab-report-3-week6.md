@@ -82,7 +82,12 @@ Nothing was shown on the terminal
 ```
 Learning from Option 1, we used `-type f` to find all files under `./technical` path. By combining it with `-type f -empty`, we will find all empty files under `./technical` path. This one can be useful to detect if there is any empty file under `./technical` path. In this case, there is no empty files under `./technical` path.
 
-## Now, let's use ChatGPT to help us find the rest two options as our sources.
+# Now, let's use ChatGPT as our sources to help us find the rest two options.
+
+Prompt I asked ChatGPT:
+![30621683749439_ pic](https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/f6ea2bef-55aa-419b-a59d-d0bd0675da54)
+
+## Option 3: Find Empty(`-empty` option)
 
 
 
