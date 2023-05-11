@@ -80,7 +80,7 @@ Output:
 ```
 Nothing was shown on the terminal
 ```
-Learning from Option 1, we used `-type f` to find all files under `./technical` path. By combining it with `-type f -empty`, we will find all empty files under `./technical` path. This one can be useful to detect if there is any empty file under `./technical` path. In this case, there is no empty files under `./technical` path. This option can be helpful when we want to identify some empty files or directories, especially when we want to clean up these empty files/directories or investigate whether certain data has been missed.
+Learning from Option 1, we used `-type f` to find all files under `./technical` path. By combining it with `-type f -empty`, we will find all empty files under `./technical` path. This one can be useful to detect if there is any empty file under `./technical` path. In this case, there is no empty files under `./technical` path. This option can help a lot when we want to identify some empty files or directories, especially when we want to clean up these empty files/directories or investigate whether certain data has been missed.
 
 # Now, let's use ChatGPT as our sources to help us find the rest two options.
 
