@@ -3,7 +3,7 @@ In this report, I will explore 4 useful comand-line options for `find`. `find` c
 
 ## Option 1: Find files by type(`-type` option)
 
-After I typed `find command-line options` on google, I scrolled down a little bit. Then, I found this useful and concise descriptions about some command-line options for `find`. This source explores 10 ways to use find command.
+After I typed `find command-line options` on google, I scrolled down a little bit. Then, I found this useful and concise description about some command-line options for `find`. This source explores 10 ways to use find command.
 
 Source: https://www.redhat.com/sysadmin/linux-find-command
 
