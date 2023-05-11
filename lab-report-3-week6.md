@@ -138,7 +138,7 @@ Output:
 ./technical/government/Post_Rate_Comm/ReportToCongress2002WEB.txt
 ```
 
-By learning from ChatGPT, in this case, we found all files and directories with names starting with "report" or "Report" within the ./technical directory and its subdirectories. This can be more powerful than `-name` if we do not care about cases of our searches as it is more effective. Unlike, `-name`, this can be especially helpful when sometimes we are inconsistent about case choices, which can prevent from misssing some files.
+By learning from ChatGPT, in this case, we found all files and directories with names starting with "report" or "Report" within the ./technical directory and its subdirectories. This can be more powerful than `-name` if we do not care about cases of our searches as it is more effective. Unlike `-name`, this can be especially helpful when sometimes we are inconsistent about case choices, which can prevent from misssing some files.
 
 ## Option 4: Searching Newer Than Specified Date(`-newermt` option)
 The answer ChatGPT gave me:
