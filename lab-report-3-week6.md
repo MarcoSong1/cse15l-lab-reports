@@ -50,7 +50,7 @@ Output:
 ./technical/plos/pmed.0020028.txt
 ...
 ```
-By using `-type f`, it allows us to find all files inside `./technical`, it is helpful if we want to look at the files without their directories.
+By using `-type f`, it allows us to find all files inside `./technical`, it is helpful if we want to look at the files without their directories. This one can be helpful when sometimes we only want to focus on certain types of file/directories, which can save us lots of time by this filtering property. Also, we can combine this option with other options. Please see options below to check it out!
 
 ## Option 2: Find Empty(`-empty` option)
 
@@ -80,7 +80,7 @@ Output:
 ```
 Nothing was shown on the terminal
 ```
-Learning from Option 1, we used `-type f` to find all files under `./technical` path. By combining it with `-type f -empty`, we will find all empty files under `./technical` path. This one can be useful to detect if there is any empty file under `./technical` path. In this case, there is no empty files under `./technical` path.
+Learning from Option 1, we used `-type f` to find all files under `./technical` path. By combining it with `-type f -empty`, we will find all empty files under `./technical` path. This one can be useful to detect if there is any empty file under `./technical` path. In this case, there is no empty files under `./technical` path. This option can be helpful when we want to identify some empty files or directories, especially when we want to clean up these empty files/directories or investigate whether certain data has been missed.
 
 # Now, let's use ChatGPT as our sources to help us find the rest two options.
 
@@ -138,7 +138,7 @@ Output:
 ./technical/government/Post_Rate_Comm/ReportToCongress2002WEB.txt
 ```
 
-By learning from ChatGPT, in this case, we found all files and directories with names starting with "report" or "Report" within the ./technical directory and its subdirectories. This can be more powerful than `-name` if we do not care about cases of our searches as it is more effective.
+By learning from ChatGPT, in this case, we found all files and directories with names starting with "report" or "Report" within the ./technical directory and its subdirectories. This can be more powerful than `-name` if we do not care about cases of our searches as it is more effective. Unlike, `-name`, this can be especially helpful when sometimes we are inconsistent about case choices, which can prevent from misssing some files.
 
 ## Option 4: Searching Newer Than Specified Date(`-newermt` option)
 The answer ChatGPT gave me:
@@ -151,7 +151,7 @@ Example 1:
 
 ```
 find ./technical -type f -newermt '2023-05-07'
-``
+```
 
 Output:
 ```
@@ -182,7 +182,9 @@ Output:
 ./technical/911report
 ```
 
-In this example, `find ./technical -type d -newermt '2022-04-01'` searches for all directories within the ./technical directory and its subdirectories that have a modification time newer than
+In this example, `find ./technical -type d -newermt '2022-04-01'` searches for all directories within the `./technical` directory and its subdirectories that have a modification time newer than date `2022-04-01`
+
+This option can be useful for us to look for modified files or directories in certain periods to review the changes of files or directories, which can help to track our works.
 
 
 
