@@ -26,7 +26,7 @@ Output:
 ./technical/biomed
 ./technical/911report
 ```
-The `-type` option can help us to search for files or directories based on the types. In this case, it is usefuly to use `-type d` option if we want to search for directories inside `./technical`.
+The `-type` option can help us to search for files or directories based on the types. In this case, it is useful to use `-type d` option if we want to search for directories inside `./technical`.
 
 Example 2:
 
