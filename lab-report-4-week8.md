@@ -120,11 +120,11 @@ Keys I used:
 
 Keys I used:
 
-`git add . <enter>`
+`git add . <enter>` -- add files
 
-`git commit -m "Fix bug" <enter>`
+`git commit -m "Fix bug" <enter>` -- commit changes
   
-`git push <enter>`
+`git push <enter>` -- push changes to GitHub
   
 <img width="800" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/bfc3bd70-3333-48ba-b583-d1719a739529">
 
