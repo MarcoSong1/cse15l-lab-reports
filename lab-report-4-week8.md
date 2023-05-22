@@ -2,7 +2,7 @@
 
 ## Step 1 Setup: Delete existing forks
 
-Delete the existing forks of the repository on your account in order to have a clean state. This can be done by going to `Settings` and go to `Danger Zone` section and Delete this repository.
+Delete the existing forks of the repository on your account in order to have a clean state. This can be done by going to `Settings` on Github and go to `Danger Zone` section and delete the repository.
 
 On VSCode Terminal:
 
