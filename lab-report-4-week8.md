@@ -73,7 +73,7 @@ I think using `bash test.sh <enter>` is fast. If we typed `vim test.sh <enter>` 
 
 <img width="973" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/0007c667-0fe9-4f96-b8e2-2facb27de9eb">
   
-Instead of typing long commands `javac ...` and `java ...`, which complie files and run the tests. We could store the commands in `test.sh` and run `bash test.sh <enter>` to avoind the annoying typing and save a lot of time!
+Instead of typing long commands `javac ...` and `java ...`, which complie files and run the tests. We could store the commands in `test.sh` and run `bash test.sh <enter>` to avoid the annoying typing and save a lot of time!
 
 Using `:q! <enter>` to exit the vim.
 
