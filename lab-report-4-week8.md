@@ -124,7 +124,7 @@ Keys I used:
 
 `git commit -m "Fix bug" <enter>`
   
-`git push`
+`git push <enter>`
   
 <img width="800" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/bfc3bd70-3333-48ba-b583-d1719a739529">
 
