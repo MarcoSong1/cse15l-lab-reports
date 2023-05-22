@@ -89,7 +89,7 @@ Key I used:
 
 Key I used to find the position of buggy code:
 
-`/index1 <enter>`, and then typed `n` 9 times.
+`/index1 <enter>` (this is like control + F in web, which searches the key we typed), and then typed `n` 9 times.
 
 <img width="935" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/3cd1b18c-8299-4bc7-84d6-58f4bf893fd3">
 
@@ -112,7 +112,7 @@ typed `:wq! <enter>` to exit and save.
 
 Keys I used:
 
-`<up><up><up> <enter>` to access 'bash test.sh` again.
+`<up><up><up> <enter>` to access `bash test.sh` again.
 
 <img width="591" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/2f99620e-7e0c-4e98-ab6a-2d3ec3de9f43">
 
