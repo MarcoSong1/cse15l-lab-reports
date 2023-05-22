@@ -69,7 +69,7 @@ Keys I used:
 
 Reason I used these commands:
 
-I think using `bash test.sh <enter>` is fast. If we typed `vim test.sh` on terminal. We will see the following:
+I think using `bash test.sh <enter>` is fast. If we typed `vim test.sh <enter>` on terminal. We will see the following:
 
 <img width="973" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/0007c667-0fe9-4f96-b8e2-2facb27de9eb">
   
