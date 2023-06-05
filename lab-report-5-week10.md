@@ -43,7 +43,7 @@ Another way to fix the bug is to remove `java_sample` folder and to move all fil
 
 In method 1 to fix the bug, we need to set directory to the place where `sample.java` located by using `cd`. Orginally, I wrote the script code intended to we run the java program. Inside `java_sample` folder, I created `sample.java` file as my test file to test my script.
 
-In method 2 to fix the bug, I only have one folder `CSE15L`. I removed `sh_script` folder, and put 
+In method 2 to fix the bug, I only have one folder `CSE15L`. I removed `java_sample` folder, and put 
 my script and `sample.java` inside `CSE15L` folder. Then I changed `java_file="/Users/songkunhao/Desktop/CSE15L/sample.java"`
 
 #### The contents of each file before fixing the bug
