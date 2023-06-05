@@ -22,11 +22,11 @@ After creating the script and `sample.java` file, I first set the directory to `
 
 ### TA's Response
 
-Hi, I think your script code looks almost fine. The issue should be the path you are dealing with. Note that inside `CSE15L` folder, you still have a sub folder 'java_sample` inside `CSE15L`, which stores your java file. When you are calling `JavaCommand.sh` on terminal, you are inside `CSE15L` path. I suggest you be more careful about the path inside your script in the example you provided. Do you observe the path issue? Is the path consistent in your script? There should be multiple ways to fix the weird behavior that your code does.
+Hi, I think your script code looks almost fine. The issue should be the path you are dealing with. Note that inside `CSE15L` folder, you still have a sub folder `java_sample` inside `CSE15L`, which stores your java file. When you are calling `JavaCommand.sh` on terminal, you are in `CSE15L` path. I suggest you be more careful about the path inside your script in the example you provided. Do you observe the path issue? Is the path consistent in your script? There should be multiple ways to fix the weird behavior that your code does.
 
 ### Student fixed the bug
 
-After receiving TA's feedback, I realized that the buggy part was in my in the script about the path. The 'sample.java' is inside `java_sample` folder, but the script is inside `CSE15L` folder. When I running the script on the terminal, the content of script file did not handle the path issue. I should set the directory to the path where 'sample.java` located.
+After receiving TA's feedback, I realized that the buggy part was in my script about the path. The `sample.java` is inside `java_sample` folder, but the script is inside `CSE15L` folder. When I running the script on the terminal, the content of script file did not handle the path issue. I should set the directory to the path where `sample.java` located.
 
 <img width="1019" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/6e98b1f7-90b9-46d9-b20a-b3072e084c26">
 <img width="602" alt="image" src="https://github.com/MarcoSong1/cse15l-lab-reports/assets/129908756/d7353f71-a53b-4bc0-a96a-a4ba0afda5a6">
@@ -41,18 +41,18 @@ Another way to fix the bug is to remove `java_sample` folder and to move all fil
 
 #### The file & directory structure needed
 
-In method 1 to fix the bug, we need to set directory to the place where `sample.java` located by using `cd`. Orginally, I wrote the script code intended to we run the java program. Inside `java_sample` folder, I created 'sample.java' file as my test file to test my script.
+In method 1 to fix the bug, we need to set directory to the place where `sample.java` located by using `cd`. Orginally, I wrote the script code intended to we run the java program. Inside `java_sample` folder, I created `sample.java` file as my test file to test my script.
 
 In method 2 to fix the bug, I only have one folder `CSE15L`. I removed `sh_script` folder, and put 
-my script and 'sample.java' inside `CSE15L` folder. Then I changed `java_file="/Users/songkunhao/Desktop/CSE15L/sample.java"`
+my script and `sample.java` inside `CSE15L` folder. Then I changed `java_file="/Users/songkunhao/Desktop/CSE15L/sample.java"`
 
 #### The contents of each file before fixing the bug
 
-Before fixing the bug, the content of the script was the screenshot above. The content of 'sample.java' was just printing `"Hello, world!"`.
+Before fixing the bug, the content of the script was the screenshot above. The content of `sample.java` was just printing `"Hello, world!"`.
 
 #### The full command line (or lines) you ran to trigger the bug
 
-open integrated terminal on VSCode, which sets the path to 'CSE15L` from `JavaCommand.sh`.
+open integrated terminal on VSCode, which sets the path to `CSE15L` from `JavaCommand.sh`.
 
 Set execute permission on the script by typing `chmod +x JavaCommand.sh` on the terminal.
 
@@ -62,13 +62,11 @@ Then we triggered the bug
 
 #### A description of what to edit to fix the bug
 
-This section was discussed in student's response to TA's feedback. To summarize, we have at least two ways to fix the bug, either add changing path command `cd` in `JavaCommand.sh` or removing `java_sample` folder and change java_file's path located at `CSE15L`.
+This section was discussed in student's response to TA's feedback. To summarize, we have at least two ways to fix the bug, either adding changing path command `cd` in `JavaCommand.sh` or removing `java_sample` folder and change `java_file`'s path located at `CSE15L`.
 
 ## Part 2 – Reflection
 
-In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
-
-I had no idea about what shell script is. Before learning about this, I was exhausted about typing some repeated commands in the terminal. Learning from this class, I know that we could actually store this commands in a shell script. In this case, we do not need to run so many tedious command over and over again, but rather just running the script. It saves me a lot of time when coding, especailly we can store command commands that we often use in the script. Also, Vim is very powerful as we do not need mouse anymore to change and edit code. This can be extremely time-saving when we are very familar with commands on Vim. I learned a lot of techniques and knowldege about coding and computer from this class!✌🏻
+I had no idea about what shell script is. Before learning about this, I was exhausted about typing some repeated commands in the terminal. Learning from this class, I know that we could actually store these commands in a shell script. In this case, we do not need to run so many tedious commands over and over again, but rather just running the script. It saves me a lot of time when coding, especailly we can store common commands that we often use in the script. Also, Vim is very powerful as we do not need mouse anymore to change and edit code. This can be extremely time-saving when we are very familar with commands on Vim. I learned a lot of techniques and knowldege about coding and computer from this class!✌🏻
 
 
 
