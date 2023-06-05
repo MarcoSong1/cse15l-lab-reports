@@ -20,4 +20,18 @@ script code, but the file could not be found even though script and file.txt are
 
 ### Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.
 
+After creating the script and file.txt file, I first set the directory to `sh_script` by typing `cd sh_script` on terminal. After typing `./check_file.sh` on terminal, I got the weird behavior.
+
+### TA's Response
+
+Hi, I think your script code looks fine. The issue should be the path you are dealing with. Note that inside `CSE15L` folder, you still have
+a sub folder 'sh_script` inside `CSE15L`. When you are calling `check_file.sh` on terminal, you are inside `sh_script` path. I suggest you
+be more careful about the `file_path` inside your script in the example you provided. Do you observe the path issue? There should be multiple ways to fix the weird behavior that your code does.
+
+### Student fixed the bug
+
+After receiving TA's feedback, I realized that the buggy part
+
+
+
 
