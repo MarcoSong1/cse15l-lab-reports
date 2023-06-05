@@ -18,7 +18,7 @@ I want to create a script `JavaCommand.sh` to compile and run a Java program: `s
 
 ### Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.
 
-After creating the script and `sample.java` file, I first set the directory to `CSE15L` by opening the integrated terminal from ``JavaCommand.sh`. After typing `chmod +x JavaCommand.sh` on terminal(gives execute permission) and `./JavaCommand.sh`, I got the weird behavior that I could not complie and run the java program I created.
+After creating the script and `sample.java` file, I first set the directory to `CSE15L` by opening the integrated terminal from `JavaCommand.sh`. After typing `chmod +x JavaCommand.sh` on terminal(gives execute permission) and `./JavaCommand.sh`, I got the weird behavior that I could not complie and run the java program I created.
 
 ### TA's Response
 
