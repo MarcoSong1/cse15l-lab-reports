@@ -62,8 +62,13 @@ Then we triggered the bug
 
 #### A description of what to edit to fix the bug
 
-This section was discussed in student's response to TA's feedback. To summarize, we have at least two ways to fix the bug, either changing
-the path of `file.txt` or removing `sh_script` folder.
+This section was discussed in student's response to TA's feedback. To summarize, we have at least two ways to fix the bug, either add changing path command `cd` in `JavaCommand.sh` or removing `java_sample` folder and change java_file's path located at `CSE15L`.
+
+## Part 2 – Reflection
+
+In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
+
+I had no idea about what shell script is. Before learning about this, I was exhausted about typing some repeated commands in the terminal. Learning from this class, I know that we could actually store this commands in a shell script. In this case, we do not need to run so many tedious command over and over again, but rather just running the script. It saves me a lot of time when coding, especailly we can store command commands that we often use in the script. Also, Vim is very powerful as we do not need mouse anymore to change and edit code. This can be extremely time-saving when we are very familar with commands on Vim. I learned a lot of techniques and knowldege about coding and computer from this class!✌🏻
 
 
 
